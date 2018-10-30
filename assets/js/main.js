@@ -454,7 +454,7 @@ console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55')
                 $cfsubmit = $("#cfsubmit"),
                 cfsubmitText = $cfsubmit.text();
 
-            $cfsubmit.text("Sending...");
+            $cfsubmit.text("Verzenden...");
 
 
             $.ajax(
@@ -470,7 +470,7 @@ console.log('%c Proudly Crafted with ZiOn.', 'background: #222; color: #bada55')
                         $('#contactForm textarea[name=message]').val('');
                     },
                     error: function (data) {
-                        alert("Error occurd! Please try again");
+                        alert("Er is een fout opgetreden.  Probeer opnieuw!");
                     }
                 });
 

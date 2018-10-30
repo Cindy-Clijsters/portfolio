@@ -46,6 +46,7 @@
                         <ul class="nav navbar-nav navbar-right">
                             <li><a href="#totop">Home</a></li>
                             <li><a class="section-scroll" href="#about-me">Over mij</a></li>
+                            <li><a class="section-scroll" href="#contact">Contacteer mij</a></li>
                         </ul>
                     </div>
                 </div>
@@ -125,7 +126,63 @@
                     </div>
                 </section>
                 
+                <section class="module" id="contact">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-8 col-sm-offset-2">
+                                <h2 class="module-title font-alt">Contacteer mij</h2>
+                                <div class="module-subtitle font-serif"></div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-8 col-sm-offset-2">
+                                <form id="contactForm" role="form" method="post" action="php/contact.php">
+                                    <div class="form-group">
+                                        <label class="sr-only" for="name">Naam</label>
+                                        <input class="form-control" type="text" id="name" name="name" placeholder="Je naam *" />
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class="sr-only" for="email">E-mailadres</label>
+                                        <input class="form-control" type="email" id="email" name="email" placeholder="Je e-mailadres *"/>
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div class="form-group">
+                                        <textarea class="form-control" rows="7" id="message" name="message" placeholder="Je bericht *"></textarea>
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div class="text-center">
+                                        <button class="btn btn-block btn-round btn-d" id="cfsubmit" type="submit">Verzenden</button>
+                                    </div>
+                                </form>
+                                <div class="ajax-response font-alt" id="contactFormResponse"></div>
+                            </div>
+                        </div>
+                    </div>
+                </section>   
+                
+                <hr class="divider-d">
+                <footer class="footer bg-dark">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <p class="copyright font-alt">&copy; 2018&nbsp;<a href="index.html">Cindy Clijsters</a>, All Rights Reserved</p>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="footer-social-links">
+                                    <a href="https://www.linkedin.com/in/cindyclijsters/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+
+                        
+      
+      
             </div>
+            
+            <div class="scroll-up"><a href="#totop"><i class="fa fa-angle-double-up"></i></a></div>
             
             
 

@@ -28,7 +28,7 @@
         <link id="color-scheme" href="assets/css/colors/default.css" rel="stylesheet">
         
     </head>
-    <body>
+    <body data-spy="scroll" data-target=".onpage-navigation" data-offset="60">
         <main>
             
             <!-- Loading element -->
@@ -37,7 +37,7 @@
             </div>
             
             <!-- Navigation bar -->
-            <nav class="navbar navbar-custom navbar-transparent navbar-fixed-top" role="navigation">
+            <nav class="navbar navbar-custom navbar-transparent navbar-fixed-top one-page" role="navigation">
                 <div class="container">
                     <div class="navbar-header">
                         <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#custom-collapse"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a class="navbar-brand" href="index.html">CINDY CLIJSTERS</a>
@@ -46,6 +46,7 @@
                         <ul class="nav navbar-nav navbar-right">
                             <li><a href="#totop">Home</a></li>
                             <li><a class="section-scroll" href="#about-me">Over mij</a></li>
+                            <li><a class="section-scroll" href="#works">Portfolio</a></li>
                             <li><a class="section-scroll" href="#contact">Contacteer mij</a></li>
                         </ul>
                     </div>
@@ -125,6 +126,33 @@
                         </div>
                     </div>
                 </section>
+
+                <section class="module" id="works">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <ul class="filter font-alt" id="filters">
+                                    <li><a class="current wow fadeInUp" href="#" data-filter="*">Alle</a></li>
+                                    <li><a class="wow fadeInUp" href="#" data-filter=".html-css" data-wow-delay="0.2s">HTML/CSS</a></li>
+                                    <li><a class="wow fadeInUp" href="#" data-filter=".javascript" data-wow-delay="0.6s">JavaScript</a></li>
+                                    <li><a class="wow fadeInUp" href="#" data-filter=".php" data-wow-delay="0.6s">PHP</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <ul class="works-grid works-hover-w" id="works-grid">
+                            <li class="work-item html-css javascript php">
+                                <a href="vinder.html">
+                                    <div class="work-image"><img src="assets/images/portfolio/grid-portfolio1.jpg" alt="Vinder"/></div>
+                                    <div class="work-caption font-alt">
+                                        <h3 class="work-title">Vinder</h3>
+                                        <div class="work-descr">Zakelijke tinder</div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </section>                
+                
            
                 <section class="module bg-dark-60 pt-0 pb-0 parallax-bg testimonial" data-background="assets/images/thomas-tastet-1056492-unsplash.jpg">
                     <div class="testimonials-slider pt-140 pb-140">
@@ -247,6 +275,7 @@
                             <div class="col-sm-6">
                                 <div class="footer-social-links">
                                     <a href="https://www.linkedin.com/in/cindyclijsters/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                                    <a href="https://github.com/Cindy-Clijsters" target="_blank"><i class="fa fa-github"></i></a>
                                 </div>
                             </div>
                         </div>
